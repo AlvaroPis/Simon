@@ -289,19 +289,19 @@ function mostrarRanking() {
     
     switch(sortBy) {
         case 'puntaje-desc':
-            partidas.sort((a, b) => b.puntaje - a.puntaje);
+            partidas.sort(function(a, b) { return b.puntaje - a.puntaje; });
             break;
         case 'puntaje-asc':
-            partidas.sort((a, b) => a.puntaje - b.puntaje);
+            partidas.sort(function(a, b) { return a.puntaje - b.puntaje; });
             break;
         case 'fecha-desc':
-            partidas.sort((a, b) => new Date(b.fecha) - new Date(a.fecha));
+            partidas.sort(function(a, b) { return new Date(b.fecha) - new Date(a.fecha); });
             break;
         case 'fecha-asc':
-            partidas.sort((a, b) => new Date(a.fecha) - new Date(b.fecha));
+            partidas.sort(function(a, b) { return new Date(a.fecha) - new Date(b.fecha); });
             break;
-        case 'nivel-desc':
-            partidas.sort((a, b) => b.nivel - a.nivel);
+         case 'nivel-desc':
+            partidas.sort(function(a, b) { return b.nivel - a.nivel; });
             break;
     }
     
@@ -315,7 +315,7 @@ function mostrarRanking() {
         </div>
     `;
     
-    partidas.forEach((partida, index) => {
+    partidas.forEach(function(partida, index) {
         const item = document.createElement("div");
         item.className = "ranking-item";
         item.innerHTML = `
@@ -335,7 +335,7 @@ function cerrarPopup() {
     popupRanking.classList.add("hidden");
 }
 
-popupRanking.addEventListener("click", (e) => {
+popupRanking.addEventListener("click", function(e) {
     if (e.target === popupRanking) {
         cerrarPopup();
     }
