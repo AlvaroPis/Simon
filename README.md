@@ -3,7 +3,7 @@
 Este proyecto cumple tanto los Requisitos Obligatorios y Opcionales siguientes:
 
 ## Pages 
-<a href="https://github.com/AlvaroPis/Simon" target="_blank">Juego Simon</a>
+<a href="https://alvaropis.github.io/Simon/" target="_blank">Juego Simon</a>
 
 ## Requisitos Obligatorios
 - Código prolijo y estricto (HTML5, CSS3 y ES5).
