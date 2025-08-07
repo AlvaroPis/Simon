@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="stylesheet" href="./styles.css"/>
+</head>
+<body>
+    <header>
+        <h1>SIMON</h1>
+        <nav>
+            <button id="btn-juego" class="nav-btn active">Juego</button>
+            <button id="btn-contacto" class="nav-btn">Contacto</button>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <section id="juego-section">
+            <div id="turno-texto"></div>
+            <div class="ContenedorColores">
+                <div class="Izquierda">
+                    <div class="Boton Rojo"></div>
+                    <div class="Boton Verde"></div>
+                </div>
+                <div class="Derecha">
+                    <div class="Boton Amarillo"></div>
+                    <div class="Boton Azul"></div>
+                </div>
+            </div>
+            <div class="botones-container">
+                <button id="Comenzar" class="game-btn">Comenzar</button>
+                <button id="Reset" class="game-btn">Reset</button>
+                <button id="VerRanking" class="game-btn">Ver Ranking</button>
+            </div>
+            <div id="nivel-container">
+                <div id="nivel-container">
+                    <div id="nivel-container">
+                        <div id="nivel-display">
+                            <span id="nivel-titulo">Nivel</span>
+                            <span id="nivel">0</span>
+                            <span id="puntuacion-titulo">| Puntos: 0</span>
+                            <span id="tiempo-titulo">| Tiempo: 0s</span>
+                            <span id="penalizacion-titulo">| Penalización: 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</div>
+        </section>
+        <section id="contacto-section" class="hidden">
+            <h2>Contacto</h2>
+            <form id="contacto-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                    <span id="nombre-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span id="email-error" class="error-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <span id="mensaje-error" class="error-message"></span>
+                </div>
+                <button type="submit" id="enviar">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+<div id="ranking-popup" class="popup hidden">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Ranking de Partidas</h2>
+        
+        <div class="sort-options">
+            <label for="sort-by">Ordenar por:</label>
+            <select id="sort-by">
+                <option value="puntaje-desc">Puntaje (Mayor a menor)</option>
+                <option value="puntaje-asc">Puntaje (Menor a mayor)</option>
+                <option value="fecha-desc">Fecha (Más reciente primero)</option>
+                <option value="fecha-asc">Fecha (Más antigua primero)</option>
+                <option value="nivel-desc">Nivel (Mayor a menor)</option>
+            </select>
+        </div>
+        
+        <div id="ranking-list"></div>
+    </div>
+</div>
+
+<footer>
+    <div class="github-link">
+        <a href="https://github.com/AlvaroPis/" target="_blank" rel="noopener noreferrer">
+            <svg height="32" aria-hidden="true" viewBox="0 0 16 16" version="1.1" width="32" data-view-component="true" fill="white">
+                <path d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38 0-.27.01-1.13.01-2.2 0-.75-.25-1.23-.54-1.48 1.78-.2 3.65-.88 3.65-3.95 0-.88-.31-1.59-.82-2.15.08-.2.36-1.02-.08-2.12 0 0-.67-.22-2.2.82-.64-.18-1.32-.27-2-.27-.68 0-1.36.09-2 .27-1.53-1.03-2.2-.82-2.2-.82-.44 1.1-.16 1.92-.08 2.12-.51.56-.82 1.28-.82 2.15 0 3.06 1.86 3.75 3.64 3.95-.23.2-.44.55-.51 1.07-.46.21-1.61.55-2.33-.66-.15-.24-.6-.83-1.23-.82-.67.01-.27.38.01.53.34.19.73.9.82 1.13.16.45.68 1.31 2.69.94 0 .67.01 1.3.01 1.49 0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"></path>
+            </svg>
+            Ver código en GitHub
+        </a>
+    </div>
+</footer>
+    
+    <script src="./dom.js"></script>
+</body>
+</html>

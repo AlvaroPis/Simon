@@ -1,0 +1,382 @@
+body{
+    background-color: black;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    color: white;
+}
+
+#turno-texto{
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.ContenedorColores{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    background-color: black;
+}
+
+#nivel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boton{
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.Rojo{
+    background-color: rgb(216, 1, 1);
+    border-top-left-radius: 100%;
+}
+.Rojo:hover{
+    background-color: rgb(255, 0, 0);
+}
+.Verde{
+    background-color: green;
+    border-bottom-left-radius: 100%;
+}
+
+.Verde:hover{
+    background-color: rgb(43, 255, 0);
+}
+
+.Azul{
+    background-color: rgb(0, 0, 209);
+    border-bottom-right-radius: 100%;
+}
+
+.Azul:hover{
+    background-color: rgb(0, 0, 255);
+}
+
+.Amarillo{
+    background-color: rgb(224, 224, 20);
+    border-top-right-radius: 100%;
+}
+
+.Amarillo:hover{
+    background-color: yellow;
+}
+
+.Botones {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    gap: 15px;
+    flex-wrap: wrap;
+    max-width: 600px;
+}
+
+.Boton.active-border {
+    border: 3px solid white; 
+}
+
+.botones-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.game-btn {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    height: 48px;
+    min-width: 120px;
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    max-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+
+.game-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+
+
+#Comenzar{
+    font-size: 22px;
+    margin: 10px;
+    background-color: #45a049;
+}
+
+#Reset{
+    font-size: 22px;
+    margin: 10px;
+    background-color: #f44336;
+}
+
+#Reset:hover {
+    background-color: #d32f2f;
+}
+
+#VerRanking {
+    background-color: #2196F3;
+}
+
+#VerRanking:hover {
+    background-color: #0b7dda;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-bottom: 20px;
+}
+
+.nav-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.nav-btn.active {
+    background-color: #555;
+}
+
+.hidden {
+    display: none;
+}
+
+#contacto-section {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    color: white;
+}
+
+#contacto-section h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    display: block;
+    margin-top: 5px;
+}
+
+#enviar {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+#enviar:hover {
+    background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.github-link a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.github-link a:hover {
+    background-color: white;
+    color: black;
+}
+
+.github-link a:hover {
+    transform: scale(1.1);
+}
+
+.github-link svg {
+    width: 20px;
+    height: 20px;
+}
+
+#nivel-container {
+    text-align: center;
+    margin: 20px 0;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+#tiempo-titulo {
+    font-size: 16px;
+    color: #ff9900;
+}
+
+#nivel-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#nivel-titulo {
+    color: white;
+    font-size: 24px;
+}
+
+#nivel {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#puntuacion-titulo {
+    font-size: 16px;
+    color: #ccc;
+}
+
+#penalizacion-titulo {
+    font-size: 16px;
+    color: #ff6666;
+}
+
+@media (min-width: 600px) {
+    #nivel-display {
+        flex-wrap: nowrap;
+    }
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup.hidden {
+    display: none;
+}
+
+.popup-content {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80vh;
+    overflow-y: auto;
+    color: white;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.ranking-item-header {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 2fr;
+    gap: 10px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.ranking-item {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr 1fr 2fr;
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+    align-items: center;
+}
+
+.ranking-item span, .ranking-item-header span {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ranking-item span:first-child, .ranking-item-header span:first-child {
+    text-align: center;
+}
